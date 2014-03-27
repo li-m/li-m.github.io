@@ -1,0 +1,164 @@
+﻿body {
+	font-size: 14px;
+	font-family: Arial, 'Microsoft YaHei', 微软雅黑, SimSun, 宋体;
+	margin: 0px;
+	padding: 0px;
+}
+
+a {
+    text-decoration: none;
+	padding: 0;
+	margin: 0;
+	color: gray;
+}
+
+a:hover {
+	text-decoration: none;
+	color: gray;
+}
+
+
+.clear {
+	width: 0px;
+	height: 0px;
+	padding: 0px;
+	margin: 0px;
+	clear: both;
+}
+
+.wrap {
+	width: 1000px;
+	margin: 0px auto;
+}
+
+.top {
+	color: white;
+
+	height: 100px;
+
+	background-image: url(../images/bg1.png);
+	background-repeat: repeat;
+	
+}
+
+.content {
+	margin-top: 110px;
+}
+
+.left {
+	overflow: hidden;
+	text-align: right;
+	color: gray;
+	width: 360px;
+}
+
+
+.left-title {
+
+	font-size: 18px;
+	font-weight: bold;
+	padding-right: 30px;
+	margin-bottom: 10px;
+	text-decoration: underline;
+	color: black;
+	letter-spacing: 2px;
+}
+
+.affix {
+	position: fixed;
+	top: 110px;
+}
+
+.left-items {
+	padding: 10px;
+	border-right: 1px solid gray;
+}
+
+.left-item {
+	letter-spacing: 1px;
+}
+.left-item:hover {
+	font-weight: bold;
+	letter-spacing: 0;
+}
+
+li.active>a {
+	color: lightblue;
+}
+
+.right {
+	margin-left: 310px;
+
+	width: 690px;
+
+}
+
+.right-item {
+	border: 1px solid gray;
+	border-radius: 5px;
+	padding: 0px;
+	margin-bottom: 5px;
+	
+	background-color: #eeeeee;
+	overflow: hidden;
+}
+
+.right-item-title {
+	color: white;
+	background-color: gray;
+	padding: 10px;
+	margin: 0px;
+	border-radius: 4px 4px 0 0;
+	font-weight: bold;
+	font-size: 16px;
+}
+.right-item-title:hover {
+	cursor:pointer;
+	background-color: #444444;
+}
+
+.code {
+	font-size: 14px;
+	color: lightblue;
+}
+
+.code a {
+	color: lightblue;
+}
+.code a:hover {
+	color: white;
+}
+
+
+
+.right-item-content {
+	margin: 10px;
+}
+
+.meuh {
+	position: fixed;
+	right: 30px;
+	top: 150px;
+}
+.meuh:hover {
+	cursor: pointer;
+}
+.bg-meuh {
+	display: none;
+	width: 100%;
+	height: 100%;
+	z-index: -1000;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+
+}
+
+/*Responsive Override the original one*/
+@media only screen and (max-width: 1250px) {
+.affix {
+	position: static;
+	width: auto;
+	top: 0;
+
+}}
