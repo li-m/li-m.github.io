@@ -25,6 +25,10 @@ a:hover {
 	clear: both;
 }
 
+.content-img {
+    width: 500px;
+}
+
 .top {
 	color: white;
 	height: 50px;
