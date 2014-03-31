@@ -65,6 +65,7 @@ img {
 }
 
 
+
 /* logo and search*/
 
 .logo-and-search {
@@ -72,7 +73,7 @@ img {
     margin: 20px auto 0;
     width: 1000px;
     height: 74px;
-    border-bottom: solid 2px #a6a6a6;
+    border-bottom: solid 1px #a6a6a6;
 }
 .logo {
 	float: left;
@@ -81,7 +82,7 @@ img {
 
 .search {
 
-float: right;
+    float: right;
     width: 755px;
     height: 38px;
 }
@@ -152,10 +153,10 @@ float: right;
 /* banner */
 .banners {
 
-    margin-top: 2px;
+    margin-top: 3px;
 
     height: 472px;
-    border-top: solid 2px #f8ac94;
+    border-top: solid 1px #f8ac94;
     border-bottom: solid 1px #f15a25;
 }
 
@@ -212,7 +213,7 @@ float: right;
 
 /* navigation */
 .navigation {
-	margin-top: 1px;
+	margin-top: 3px;
     height: 195px;
     border-top: solid 1px #4d4d4d;
     /* background-color: red; */
@@ -272,9 +273,10 @@ nobr {
 
 /* records */
 .records {
-	margin-top: 2px;
+	margin-top: 3px;
 	border-top: solid 1px #4d4d4d;
 	border-bottom: solid 1px #4d4d4d;
+    width: 1000px;
 
 }
 
@@ -284,6 +286,7 @@ nobr {
 	padding: 0;
 	border: solid 2px #cccccc;
 	height: 139px;
+    width: 1000px;
 }
 
 .map {
@@ -293,9 +296,9 @@ nobr {
 .records-list {
 	float: right;
 	width: 760px;
-	height: 99px;
+	height: 124px;
 	
-	padding: 22px 5px 18px 30px;
+	padding: 22px 5px 0px 30px;
 	overflow: hidden;
 }
 
@@ -309,7 +312,7 @@ nobr {
 
 /* recommendation marks */
 .recommendation-marks {
-	margin-top: 1px;
+	margin-top: 3px;
 	height: 40px;
 	border-top: solid 1px #f15a25;
 	border-bottom: solid 1px #f15a25;
@@ -343,7 +346,7 @@ nobr {
 
 /* recommendation products */
 .recommendation-products {
-	margin-top: 2px;
+	margin-top: 3px;
 	border-top: solid 1px #4d4d4d;
 	border-bottom: solid 1px #4d4d4d;
 
@@ -377,7 +380,7 @@ nobr {
 /* recommendation list*/
 
 .recommendation-list {
-	margin-top: 2px;
+	margin-top: 3px;
 
 	border-top: solid 1px #f15a25;
 
@@ -602,10 +605,10 @@ nobr {
 /* Search results*/
 .search-results {
 
-	border-top: 2px solid #f4835b;
+	border-top: 1px solid #f4835b;
 	border-bottom: 1px solid #4d4d4d;
 	
-	margin-top: 2px;
+	margin-top: 3px;
 	margin-bottom: 1px;
 	padding-bottom: 10px;
 
@@ -689,10 +692,10 @@ nobr {
 
 /* product detail */
 .product-detail {
-	border-top: 2px solid #f4835b;
+	border-top: 1px solid #f4835b;
 	border-bottom: 1px solid #4d4d4d;
 	
-	margin-top: 2px;
+	margin-top: 3px;
 	margin-bottom: 1px;
 	padding-bottom: 10px;
 	padding-top: 17px;
@@ -862,7 +865,7 @@ nobr {
 
 /* login */
 .login {
-	margin-top: 1px;
+	margin-top: 3px;
 	padding-top: 126px;
 	padding-left: 30px;
 	padding-bottom: 195px;
@@ -870,7 +873,7 @@ nobr {
 	height: 350px;
 	position: relative;
 	
-	border-top: 2px solid #f48057;
+	border-top: 1px solid #f48057;
 	
 	font-size: 18px;
 }
@@ -948,7 +951,7 @@ nobr {
 
 /* register */
 .register {
-	margin-top: 1px;
+	margin-top: 3px;
 	padding-top: 96px;
 	padding-left: 30px;
 	padding-bottom: 195px;
@@ -956,7 +959,7 @@ nobr {
 	height: 410px;
 	position: relative;
 	
-	border-top: 2px solid #f48057;
+	border-top: 1px solid #f48057;
 	
 	font-size: 18px;
 }
@@ -1006,7 +1009,7 @@ nobr {
 /* guide */
 
 .guide {
-	margin-top: 1px;
+	margin-top: 3px;
 	padding-top: 85px;
 	padding-left: 100px;
 	padding-right: 100px;
@@ -1015,7 +1018,7 @@ nobr {
 	height: 385px;
 	position: relative;
 	
-	border-top: 2px solid #f48057;
+	border-top: 1px solid #f48057;
 	
 	font-size: 30px;
 }
@@ -1065,3 +1068,4 @@ nobr {
 	width: 110px;
 	height: 75px;
 }
+
