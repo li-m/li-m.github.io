@@ -34,7 +34,7 @@ mouse = function (e) {
 //    ymouse = !isNaN(e.pageY) ? e.pageY : e.clientY; // y-position
     //    xmouse = !isNaN(e.pageX) ? e.pageX : e.clientX; // x-position
     var xmouse = e.pageX - $("#trans").offset().left - 25;
-    var ymouse = e.pageY - $("#trans").offset().top - 40;
+    var ymouse = e.pageY - $("#trans").offset().top - 50;
 
     $("#map-text").css({ "left": xmouse, "top": ymouse });
     $("#map-text").text($(this).attr("alt"));
