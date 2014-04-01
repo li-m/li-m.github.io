@@ -29,6 +29,8 @@ a:hover {
     width: 500px;
 }
 
+
+
 .wrap {
 	width: 1000px;
 	margin: 0px auto;
@@ -36,14 +38,42 @@ a:hover {
 
 .top {
 	position: fixed;
-	color: white;
+	color: black;
 	z-index: 1000;
 	width: 1000px;
 	height: 100px;
-
+    font-weight:bold;
 	background-image: url(../images/bg1.png);
 	background-repeat: repeat;
 	
+}
+
+.hhhh {
+    font-size: 90px;
+    line-height: 90px;
+    color: lightgray;
+
+}
+
+.mw {
+    color: black;
+    margin-left: 40px;
+}
+
+.turn {
+    
+    display: inline-block;
+    -webkit-transform: rotate(90deg); 
+    -moz-transform: rotate(90deg);	
+
+    -ms-transform: rotate(90deg);
+
+
+    -o-transform: rotate(90deg);
+
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+
+
 }
 
 .content {

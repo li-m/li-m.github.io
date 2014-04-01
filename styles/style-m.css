@@ -30,11 +30,41 @@ a:hover {
 }
 
 .top {
-	color: white;
+	color: black;
 	height: 50px;
 	background-image: url(../images/bg1.png);
 	background-repeat: repeat;
+    overflow: hidden;
+        font-weight: bold;
 	
+}
+
+.hhhh {
+    font-size: 40px;
+    line-height: 40px;
+    color: lightgray;
+
+}
+
+.mw {
+    color: black;
+    margin-left: 40px;
+}
+
+.turn {
+    
+    display: inline-block;
+    -webkit-transform: rotate(90deg); 
+    -moz-transform: rotate(90deg);	
+
+    -ms-transform: rotate(90deg);
+
+
+    -o-transform: rotate(90deg);
+
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+
+
 }
 
 .content {

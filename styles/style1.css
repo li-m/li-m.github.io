@@ -16,32 +16,7 @@ a:hover {
 	color: gray;
 }
 
-.hhhh {
-    font-size: 90px;
-    line-height: 90px;
-    color: lightgray;
-}
 
-.mw {
-    color: black;
-    margin-left: 40px;
-}
-
-.turn {
-    
-    display: inline-block;
-    -webkit-transform: rotate(90deg); 
-    -moz-transform: rotate(90deg);	
-
-    -ms-transform: rotate(90deg);
-
-
-    -o-transform: rotate(90deg);
-
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
-
-
-}
 
 
 .euhaitao {
@@ -81,9 +56,38 @@ a:hover {
 	background-repeat: repeat;
 
     overflow: hidden;
-
+            font-weight: bold;
 	
 }
+
+.hhhh {
+    font-size: 90px;
+    line-height: 90px;
+    color: lightgray;
+
+}
+
+.mw {
+    color: black;
+    margin-left: 40px;
+}
+
+.turn {
+    
+    display: inline-block;
+    -webkit-transform: rotate(90deg); 
+    -moz-transform: rotate(90deg);	
+
+    -ms-transform: rotate(90deg);
+
+
+    -o-transform: rotate(90deg);
+
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+
+
+}
+
 
 .content {
 	margin-top: 110px;
@@ -206,3 +210,23 @@ li.active>a {
 	top: 0;
 
 }}
+
+/* euhaitao */
+.design {
+    width: 400px;
+    margin-right:50px;
+}
+
+.margin {
+    margin: 20px 180px 0 200px;
+    font-size: 18px;
+}
+
+.margin1 {
+    margin: 0 180px 0 200px;
+    padding-top: 40px;
+}
+
+.blue {
+    color: blue;
+}
