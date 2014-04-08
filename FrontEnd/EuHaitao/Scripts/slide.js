@@ -18,5 +18,5 @@
 		setTimeout('window.location.href="Register.html"',1000);
     });
 
-
 });
+

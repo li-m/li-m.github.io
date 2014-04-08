@@ -14,6 +14,7 @@
 
     <script type="text/javascript" src="Scripts/slide.js"></script>
     <script type="text/javascript" src="Scripts/map.js"></script>
+    <script type="text/javascript" src="Scripts/brick.js"></script>
 
     <script type="text/javascript">
         $(document).ready(function () {
@@ -48,162 +49,164 @@
 
     <div class="content-mask">
         <div class="content">
-            <div class="map-b">
-                <div id="cover"></div>
+            <div class="map-box">
+                <div class="map-b">
+                    <div id="cover"></div>
 
-                <p id="map-text">
-                </p>
+                    <p id="map-text">
+                    </p>
 
-                <p id="map-title">易优地图</p>
-                <img id="trans" src="map/trans.png" usemap="#provinces" />
+                    <p id="map-title">易优地图</p>
+                    <img id="trans" src="map/trans.png" usemap="#provinces" />
 
-                <map name="provinces" id="provinces">
-                    <area shape="poly" id="xinjiang" class="province"
-                          coords="125,336, 291,335, 346,289, 412,224, 307,85,78,221"
-                          alt="新疆" href="" />
+                    <map name="provinces" id="provinces">
+                        <area shape="poly" id="xinjiang" class="province"
+                              coords="125,336, 291,335, 346,289, 412,224, 307,85,78,221"
+                              alt="新疆" href="" />
 
-                    <area shape="poly" id="xizang" class="province"
-                          coords="125,336, 291,335, 296,387, 400,435 , 414,420,432,442,432,485,421,506, 312,518,175,451,110,370"
-                          alt="西藏" href="" />
+                        <area shape="poly" id="xizang" class="province"
+                              coords="125,336, 291,335, 296,387, 400,435 , 414,420,432,442,432,485,421,506, 312,518,175,451,110,370"
+                              alt="西藏" href="" />
 
-                    <area shape="poly" id="qinghai" class="province"
-                          coords="291,335, 346,289,406,310,415,294,490,329,481,408, 461,423,421,389,414,420, 400,435,296,387 "
-                          alt="青海" href="" />
+                        <area shape="poly" id="qinghai" class="province"
+                              coords="291,335, 346,289,406,310,415,294,490,329,481,408, 461,423,421,389,414,420, 400,435,296,387 "
+                              alt="青海" href="" />
 
-                    <area shape="poly" id="gansu" class="province"
-                          coords="346,289,412,224, 425,223,440,267,465,262,457,282,484,303,521,292,509,323,526,331, 552,372,560,356,556,339,568,336, 588,352,588,372,557,379,542,420, 496,392,481,408,490,329,415,294,406,310"
-                          alt="甘肃" href="" />
+                        <area shape="poly" id="gansu" class="province"
+                              coords="346,289,412,224, 425,223,440,267,465,262,457,282,484,303,521,292,509,323,526,331, 552,372,560,356,556,339,568,336, 588,352,588,372,557,379,542,420, 496,392,481,408,490,329,415,294,406,310"
+                              alt="甘肃" href="" />
 
-                    <area shape="poly" id="sichuan" class="province"
-                          coords="432,442,414,420,421,389,461,423,481,408,496,392,542,420, 586,432,561,473,544,469,540,487, 552,500, 536,517,510,506,478,549, 432,485"
-                          alt="四川" href="" />
+                        <area shape="poly" id="sichuan" class="province"
+                              coords="432,442,414,420,421,389,461,423,481,408,496,392,542,420, 586,432,561,473,544,469,540,487, 552,500, 536,517,510,506,478,549, 432,485"
+                              alt="四川" href="" />
 
-                    <area shape="poly" id="yunnan" class="province"
-                          coords="536,517,510,506,478,549,432,485,421,506,400,583,469,637,489,612,539,603,548,589,524,573, 514,526"
-                          alt="云南" href="" />
+                        <area shape="poly" id="yunnan" class="province"
+                              coords="536,517,510,506,478,549,432,485,421,506,400,583,469,637,489,612,539,603,548,589,524,573, 514,526"
+                              alt="云南" href="" />
 
-                    <area shape="poly" id="ningxia" class="province"
-                          coords="526,331,552,372,560,356,556,339,568,336, 569,321,560,293"
-                          alt="宁夏" href="" />
+                        <area shape="poly" id="ningxia" class="province"
+                              coords="526,331,552,372,560,356,556,339,568,336, 569,321,560,293"
+                              alt="宁夏" href="" />
 
-                    <area shape="poly" id="neimenggu" class="province"
-                          coords="425,223,440,267,465,263,457,282,484,303,521,292,509,323,526,331, 560,293, 569,321, 592,324, 623,287, 664,263,669,235,712,221,733,244,793,191, 760,152,775,137, 794,44,732,14,675,118,732,138,604,228,"
-                          alt="内蒙古" href="" />
+                        <area shape="poly" id="neimenggu" class="province"
+                              coords="425,223,440,267,465,263,457,282,484,303,521,292,509,323,526,331, 560,293, 569,321, 592,324, 623,287, 664,263,669,235,712,221,733,244,793,191, 760,152,775,137, 794,44,732,14,675,118,732,138,604,228,"
+                              alt="内蒙古" href="" />
 
-                    <area shape="poly" id="shaanxi" class="province"
-                          coords="569,321,568,336, 588,352, 588,372, 557,379, 542,420, 586,432, 606,439, 626,409, 616,384, 623,287, 592,324"
-                          alt="陕西" href="" />
+                        <area shape="poly" id="shaanxi" class="province"
+                              coords="569,321,568,336, 588,352, 588,372, 557,379, 542,420, 586,432, 606,439, 626,409, 616,384, 623,287, 592,324"
+                              alt="陕西" href="" />
 
-                    <area shape="poly" id="chongqing" class="province"
-                          coords="586,432,561,473,544,469,540,487,552,500,603,501, 600,487,589,467,616,451, 606,439"
-                          alt="重庆" href="" />
+                        <area shape="poly" id="chongqing" class="province"
+                              coords="586,432,561,473,544,469,540,487,552,500,603,501, 600,487,589,467,616,451, 606,439"
+                              alt="重庆" href="" />
 
-                    <area shape="poly" id="guizhou" class="province"
-                          coords="552,500,536,517,514,526,524,573, 609,550,603,501"
-                          alt="贵州" href="" />
+                        <area shape="poly" id="guizhou" class="province"
+                              coords="552,500,536,517,514,526,524,573, 609,550,603,501"
+                              alt="贵州" href="" />
 
-                    <area shape="poly" id="guangxi" class="province"
-                          coords="609,550, 524,573,548,589,539,603,576,632,618,632,656,572,638,563,636,542"
-                          alt="广西" href="" />
+                        <area shape="poly" id="guangxi" class="province"
+                              coords="609,550, 524,573,548,589,539,603,576,632,618,632,656,572,638,563,636,542"
+                              alt="广西" href="" />
 
-                    <area shape="poly" id="hunan" class="province"
-                          coords="609,550,636,542, 638,563, 656,572,688,555,683,488,624,470, 600,487,603,501"
-                          alt="湖南" href="" />
+                        <area shape="poly" id="hunan" class="province"
+                              coords="609,550,636,542, 638,563, 656,572,688,555,683,488,624,470, 600,487,603,501"
+                              alt="湖南" href="" />
 
-                    <area shape="poly" id="hubei" class="province"
-                          coords="600,487, 624,470,683,488,715,468,701,438, 626,409, 606,439, 616,451, 589,567"
-                          alt="湖北" href="" />
+                        <area shape="poly" id="hubei" class="province"
+                              coords="600,487, 624,470,683,488,715,468,701,438, 626,409, 606,439, 616,451, 589,567"
+                              alt="湖北" href="" />
 
-                    <area shape="poly" id="henan" class="province"
-                          coords="701,438,626,409,616,384,662,361,664,346,693,348,705,377"
-                          alt="河南" href="" />
+                        <area shape="poly" id="henan" class="province"
+                              coords="701,438,626,409,616,384,662,361,664,346,693,348,705,377"
+                              alt="河南" href="" />
 
-                    <area shape="poly" id="shanxi" class="province"
-                          coords="616,384,662,361,664,346,664,263,623,287"
-                          alt="山西" href="" />
+                        <area shape="poly" id="shanxi" class="province"
+                              coords="616,384,662,361,664,346,664,263,623,287"
+                              alt="山西" href="" />
 
-                    <area shape="poly" id="hebei" class="province"
-                          coords="693,348,664,346,664,263,669,235, 712,221,733,244,748,264,726,283,713,265,697,252,686,281,704,281,706,296,721,302"
-                          alt="河北" href="" />
+                        <area shape="poly" id="hebei" class="province"
+                              coords="693,348,664,346,664,263,669,235, 712,221,733,244,748,264,726,283,713,265,697,252,686,281,704,281,706,296,721,302"
+                              alt="河北" href="" />
 
-                    <area shape="poly" id="beijing" class="province"
-                          coords="713,265,697,252,686,281,704,281"
-                          alt="北京" href="" />
+                        <area shape="poly" id="beijing" class="province"
+                              coords="713,265,697,252,686,281,704,281"
+                              alt="北京" href="" />
 
-                    <area shape="poly" id="tianjin" class="province"
-                          coords="704,281,706,296,721,302,726,283,713,265"
-                          alt="天津" href="" />
+                        <area shape="poly" id="tianjin" class="province"
+                              coords="704,281,706,296,721,302,726,283,713,265"
+                              alt="天津" href="" />
 
-                    <area shape="poly" id="liaoning" class="province"
-                          coords="748,264,733,244,793,191, 832,233,770,285,779,247,"
-                          alt="辽宁" href="" />
+                        <area shape="poly" id="liaoning" class="province"
+                              coords="748,264,733,244,793,191, 832,233,770,285,779,247,"
+                              alt="辽宁" href="" />
 
-                    <area shape="poly" id="jilin" class="province"
-                          coords="832,233,793,191,760,152,775,137, 895,170"
-                          alt="吉林" href="" />
+                        <area shape="poly" id="jilin" class="province"
+                              coords="832,233,793,191,760,152,775,137, 895,170"
+                              alt="吉林" href="" />
 
-                    <area shape="poly" id="heilongjiang" class="province"
-                          coords="895,170,775,137, 794,44,732,14,781,5,870,86,917,61"
-                          alt="黑龙江" href="" />
+                        <area shape="poly" id="heilongjiang" class="province"
+                              coords="895,170,775,137, 794,44,732,14,781,5,870,86,917,61"
+                              alt="黑龙江" href="" />
 
-                    <area shape="poly" id="shandong" class="province"
-                          coords="721,302,693,348,705,377,752,363,799,316,770,306,744,319"
-                          alt="山东" href="" />
+                        <area shape="poly" id="shandong" class="province"
+                              coords="721,302,693,348,705,377,752,363,799,316,770,306,744,319"
+                              alt="山东" href="" />
 
-                    <area shape="poly" id="jiangsu" class="province"
-                          coords="752,363,705,377,756,408,756,434,772,436,791,434,798,422,804,414"
-                          alt="江苏" href="" />
+                        <area shape="poly" id="jiangsu" class="province"
+                              coords="752,363,705,377,756,408,756,434,772,436,791,434,798,422,804,414"
+                              alt="江苏" href="" />
 
-                    <area shape="poly" id="shanghai" class="province"
-                          coords="791,434,798,422,812,431,801,440"
-                          alt="上海" href="" />
+                        <area shape="poly" id="shanghai" class="province"
+                              coords="791,434,798,422,812,431,801,440"
+                              alt="上海" href="" />
 
-                    <area shape="poly" id="anhui" class="province"
-                          coords="772,436,756,434,756,408,752,363,701,438,715,468,752,471"
-                          alt="安徽" href="" />
+                        <area shape="poly" id="anhui" class="province"
+                              coords="772,436,756,434,756,408,752,363,701,438,715,468,752,471"
+                              alt="安徽" href="" />
 
-                    <area shape="poly" id="jiangxi" class="province"
-                          coords="452,471,715,468,683,488,688,555,721,564,739,505,758,492"
-                          alt="江西" href="" />
+                        <area shape="poly" id="jiangxi" class="province"
+                              coords="452,471,715,468,683,488,688,555,721,564,739,505,758,492"
+                              alt="江西" href="" />
 
-                    <area shape="poly" id="zhejiang" class="province"
-                          coords="758,492,795,507,818,453,801,440,791,434,772,436,752,471,"
-                          alt="浙江" href="" />
+                        <area shape="poly" id="zhejiang" class="province"
+                              coords="758,492,795,507,818,453,801,440,791,434,772,436,752,471,"
+                              alt="浙江" href="" />
 
-                    <area shape="poly" id="fujian" class="province"
-                          coords="758,492,739,505,721,564,742,567,749,583,787,540,795,507"
-                          alt="福建" href="" />
+                        <area shape="poly" id="fujian" class="province"
+                              coords="758,492,739,505,721,564,742,567,749,583,787,540,795,507"
+                              alt="福建" href="" />
 
-                    <area shape="poly" id="guangdong" class="province"
-                          coords="749,583,742,567,721,564, 688,555,656,572,618,632,621,655,635,651,631,634,673,619,685,606,704,608"
-                          alt="广东" href="" />
+                        <area shape="poly" id="guangdong" class="province"
+                              coords="749,583,742,567,721,564, 688,555,656,572,618,632,621,655,635,651,631,634,673,619,685,606,704,608"
+                              alt="广东" href="" />
 
-                    <area shape="poly" id="aomen" class="province"
-                          coords="685,606,673,619,682,619,692,627"
-                          alt="澳门" href="" />
+                        <area shape="poly" id="aomen" class="province"
+                              coords="685,606,673,619,682,619,692,627"
+                              alt="澳门" href="" />
 
-                    <area shape="poly" id="xianggang" class="province"
-                          coords="685,606,692,627,708,622,704,608"
-                          alt="香港" href="" />
+                        <area shape="poly" id="xianggang" class="province"
+                              coords="685,606,692,627,708,622,704,608"
+                              alt="香港" href="" />
 
-                    <area shape="poly" id="hainan" class="province"
-                          coords="635,659,597,672,605,693,616,695,634,683,643,668"
-                          alt="海南" href="" />
+                        <area shape="poly" id="hainan" class="province"
+                              coords="635,659,597,672,605,693,616,695,634,683,643,668"
+                              alt="海南" href="" />
 
-                    <area shape="poly" id="taiwan" class="province"
-                          coords="825,540,810,549,798,541,806,597,817,608,821,589,"
-                          alt="台湾" href="" />
+                        <area shape="poly" id="taiwan" class="province"
+                              coords="825,540,810,549,798,541,806,597,817,608,821,589,"
+                              alt="台湾" href="" />
 
-                </map>
+                    </map>
 
-                <div id="map-search">
-                    <form id="map-form" action="" method="get">
-                        <div>
-                            <input type="text" class="search-field" name="#" alt="请输入包裹目的地城市 ..." placeholder="请输入包裹目的地城市 ..." />
-                            <input type="submit" class="search-button" value="" />
-                        </div>
+                    <div id="map-search">
+                        <form id="map-form" action="" method="get">
+                            <div>
+                                <input type="text" class="search-field" name="#" alt="请输入包裹目的地城市 ..." placeholder="请输入包裹目的地城市 ..." />
+                                <input type="submit" class="search-button" value="" />
+                            </div>
 
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
 
@@ -269,6 +272,79 @@
                     </div>
 
                 </div>
+            </div>
+
+            <div class="brick">
+                <a href="" class="brick-a">注册或登录</a>
+            </div>
+            <div class="brickk">
+
+                <div id="brick-select2" class="brick-select">
+                </div>
+
+
+
+                <div class="brick-selected">
+                </div>
+
+
+
+                <div class="brick-b">
+                    MTK的易优
+                </div>
+
+            </div>
+
+            <div class="brickkk">
+
+                <div class="brick-selected">
+                </div>
+
+
+
+                <div id="brick-select1" class="brick-select">
+                </div>
+
+
+                <div class="brick-b">
+                    MTK的易优
+                </div>
+
+
+                <div class="chariot">
+                    <img src="Images/chariot.png" />
+                </div>
+
+                <div class="progress">
+                    <img class="box" src="Images/box1.png" />
+                    <img class="progress-bar" src="Images/progress23.png" />
+                </div>
+
+                <div class="progress">
+                    <img class="box" src="Images/box2.png" />
+                    <img class="progress-bar" src="Images/progress23.png" />
+                </div>
+
+                <div class="progress">
+                    <img class="box" src="Images/box3.png" />
+                    <img class="progress-bar" src="Images/progress23.png" />
+                </div>
+
+                <div class="call">
+                    <img src="Images/call.png" />
+                </div>
+
+                <div class="info">
+                    <img src="Images/info.png" />
+                </div>
+
+            </div>
+
+            <div class="help">
+                <div id="help-close"></div>
+                <div id="help-qq"></div>
+                <div id="help-next"></div>
+
             </div>
         </div>
     </div>
